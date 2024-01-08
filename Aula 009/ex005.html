@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX005</title>
+    <style>
+        body {
+            background-color: rgb(221, 83, 111);
+            margin: 0 auto;
+            font-size: 25px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(221, 221, 221);
+        }
+        #res{
+            text-align: center;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprenda a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] 
+        var msg = document.querySelector('div#msg')
+        msg.style.color = 'black'
+        /*
+        var msg = document.getElementById('msg')
+        msg.innerText = "Aguarde"
+        window.document.write(div_msg.innerText)
+        window.document.write(p1.innerText)
+        */
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX010</title>
+    <style>
+        body {
+            background-color: rgb(221, 83, 111);
+            margin: 0 auto;
+            font-size: 25px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(240, 240, 240);
+        }
+        input{
+            margin: 0 auto;
+            background-color: rgba(143, 209, 235, 0.322);
+            border-radius: 25px;
+            border: solid 5px rgb(70, 143, 226) ;
+            width: 150px;
+            height: 50px;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            color: rgb(240, 240, 240);
+            background-color: rgba(151, 235, 143, 0.322);
+            border-radius: 25px;
+            border: solid 5px rgb(127, 226, 70) ;
+        }
+       
+    </style>
+</head>
+<body>
+    Velocidade:<input type="number" name="txtvel" id="txtvel">
+    <button id="verif">Verificar</button>
+    <div id="res"></div>
+
+    <script>
+        var verif = document.querySelector('button#verif')
+        verif.addEventListener('click', verificar)
+        function verificar(){
+            var res = document.querySelector('div#res')
+            var vel = Number(document.querySelector('input#txtvel').value)
+            if (vel > 60){
+                res.innerHTML = 'Você esta acima do limite de velocidade'
+            } else{
+                res.innerHTML = 'Tudo certo'
+            }
+        }
+    </script>
+</body>
+</html>
